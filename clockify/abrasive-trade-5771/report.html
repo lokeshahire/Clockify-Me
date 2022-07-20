@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        #body{
+            
+            display: flex;
+            border: 1px solid red;
+        }
+        #sidebar{
+            width: 5%;
+            border: 1px solid green;
+        }
+        #report{
+            background-color: #f2f6f8;
+            width: 95%;
+            border: 1px solid black;
+        }
+        #box1{
+            width: 95%;
+            padding: 10px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+        }
+        #part2{
+            display: flex;
+            gap: 20px;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid rgb(191, 191, 191);
+        }
+        #empty1,#empty2,#empty3,#empty4{
+            height: 25px;
+            text-align: center;
+        }
+        #part1>button{
+            height: 40px;
+            width: 40%;
+        }
+        #part1{
+            display: flex;
+            
+        }
+        #box2{
+            width: 94%;
+            padding: 10px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            border: 1px solid rgb(191, 191, 191);
+            background-color: #ffffff;
+
+        }
+        #part3{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        #btn1{
+            background-color: rgb(63, 194, 214);
+          width: 150px;
+          margin: 8px;
+        }
+        button{
+            cursor: pointer;
+            background-color: #ffffff;
+          border: 1px solid rgb(191, 191, 191) ;
+            
+        
+        }
+        button:hover{
+            background-color: #E4EAEE;
+        }
+        #box3{
+            width: 94%;
+            padding: 10px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            border: 1px solid rgb(191, 191, 191);
+            background-color:#e4eaee;
+        }
+        #part4{
+            display: flex;
+            gap: 7px;
+            justify-content: center;
+            align-items: center;
+        }
+        #part5{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        #box4{
+            height: 320px;
+            width: 94%;
+            padding: 10px;
+            margin: auto;
+            background-color: white;
+            border: 1px solid rgb(191, 191, 191);
+        }
+        #box5{
+            width: 94%;
+            margin: auto;
+            display: flex;
+            justify-content: flex-start;
+            text-align: center;
+            align-items: center;
+            height: 40px;
+            gap: 20px;
+          padding: 10px;
+            border: 1px solid rgb(191, 191, 191);
+            background-color:#e4eaee;
+        }
+        #box6{
+            padding: 10px;
+            background-color: white;
+            height: 320px;
+            width: 94%;
+            margin: auto;
+            border: 1px solid rgb(191, 191, 191);
+        }
+        select{
+            border: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="navbar" ></div>
+    <div id="body">
+        <div id="sidebar">vfdgegfgg</div>
+        <div id="report">
+            <div id="empty1"></div>
+            <div id="box1">
+                <div id="part1">
+                    <button>REPORTS</button>
+                    <button>Summary</button>
+                    <button>Detailed</button>
+                    <button>Weekly</button>
+                    <button>Shared</button>
+                </div>
+                <div id="part2">
+                    <div>This week</div>
+                    
+                    <button><</button>
+                    <button>></button>
+                </div>
+            </div>
+            <div id="empty2"></div>
+            <div id="box2">
+                <div id="part3">
+                    <div>FILTER
+                        <select name="" id=""></select>
+                    </div>
+                    <div>Team</div>
+                    <div>Client</div>
+                    <div>Project</div>
+                    <div>Task</div>
+                    <div>Tag</div>
+                    <div>Status</div>
+                    <div>Description</div>
+                </div>
+                <button id="btn1">Apply</button>
+            </div>
+            <div id="empty3"></div>
+            <div id="box3">
+                <div id="part4">
+                    <div>Time:</div>
+                    <div id="time"><h3>00:12:52</h3>
+                        </div>
+                    <div>Billable:</div>
+                    <div id="bill"><h3>00:12:52</h3></div>
+                    <div>Amount:</div>
+                    <div id="amount"><h3>0:00 USD</h3></div>
+                </div>
+                <div id="part5">
+                  <div>Export
+                  </div>
+                  <div>Print</div>
+                  <div>Share</div>
+                  <div>Rounding</div>
+                  <div>Show amount</div>
+                </div>
+                
+            </div>
+            <div id="box4">
+
+            </div>
+            <div id="empty4"></div>
+            <div id="box5">
+                <div>Group by:</div>
+                <select name="" id="">
+                    <option value="">Project</option>
+                    <option value="">Client</option>
+                    <option value="">User</option>
+                    <option value="">Group</option>
+                    <option value="">Tag</option>
+                    <option value="">Month</option>
+                    <option value="">Week</option>
+                    <option value="">Date</option>
+                   
+                </select>
+                <select name="" id="">
+                    <option value="">Description</option>
+                    <option value="">Client</option>
+                    <option value="">User</option>
+                    <option value="">Group</option>
+                    <option value="">Tag</option>
+                    <option value="">Month</option>
+                    <option value="">Week</option>
+                    <option value="">Date</option>
+                   
+                </select>
+                <div>Show estimate</div>
+            </div>
+            <div id="box6"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
