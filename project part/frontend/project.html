@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/project part/style/project.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="container">
+        <div id="sidebar">
+          <div id="tracker">
+            <img src="https://app.clockify.me/assets/nav-icons/time-tracker.svg" alt="">
+            <P>TIME TRACKER</P>
+          </div>
+          <div id="cracker">
+            <img src="https://app.clockify.me/assets/nav-icons/calendar.svg" alt="">
+            <p>CALENDER</p>
+          </div>
+          <div id="analyse_manage">
+            <p>ANALYZE</p>
+          </div>
+          <div id="cracker">
+            <img src="https://app.clockify.me/assets/nav-icons/dashboard.svg" alt="">
+            <P>DASHBOARD</P>
+          </div>
+          <div id="cracker">
+            <img src="https://app.clockify.me/assets/nav-icons/reports.svg" alt="">
+            <P>REPORTS &nbsp;  &nbsp; ></P>
+          </div>
+          <div id="analyse_manage">
+            <P>MANAGE</P>
+          </div>
+          <div id="cracker">
+            <img src="https://app.clockify.me/assets/nav-icons/projects.svg" alt="">
+            <p>PROJECTS</p>
+          </div>
+          <div id="cracker">
+            <img src="https://app.clockify.me/assets/nav-icons/teams.svg" alt="">
+            <p>TEAM</p>
+          </div>
+          <div id="cracker">
+            <img src="https://app.clockify.me/assets/nav-icons/clients.svg" alt="">
+            <p>CLIENT</p>
+          </div>
+          <div id="cracker">
+            <img src="https://app.clockify.me/assets/nav-icons/tags.svg" alt="">
+            <p>TAGS</p>
+          </div>
+          <div id="cracker">
+            <img src="https://app.clockify.me/assets/nav-icons/settings.svg" alt="">
+            <p>SETTING</p>
+          </div>
+        </div>
+        <div id="project">
+            <div id="div1">
+                <p>Projects</p>
+                <button  onclick="openpopup()">CREATE NEW PROJECT</button> 
+            </div>
+            <div id="div2">
+              <div>FILTER</div>
+
+              <select name="client" id="client">
+                <option value="">Active</option>
+              </select>
+
+                <select name="client" id="client">
+                    <option value="">Client</option>
+                </select>
+
+                <select name="client" id="client">
+                    <option value="">Access</option>
+                  </select>
+
+                  <select name="client" id="client">
+                    <option value="">Billing</option>
+                  </select>
+              <input type="text" placeholder="project name">
+              <button>Apply Filter</button>
+            </div>
+
+            <div id="div3">
+                <h4>Projects</h4>
+           
+            <table>
+                <thead>
+                  <th><a href=""> NAME</a></th>
+                  <th><a href=""> CLIENT</a></th>
+                  <th><a href="">TRACKED</a> </th>
+                  <th><a href="">AMOUNT</a></th>
+                  <th><a href="">PROGRESS</a> </th>
+                  <th><a href="">ACCESS</a> </th>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <button type="submit" class="btn" onclick="openpopup()">create project</button> -->
+    <div id="popup" class="popup">
+        <p>Create new project</p>
+        <hr>
+        <div class="first">
+            <input type="text" placeholder="Enter project name">
+            <input type="text" placeholder="Enter client name">
+        </div>
+        <div class="second">
+            <input type="checkbox"> <span>Public</span>
+            <input type="text" placeholder="No template">
+        </div>
+        <div class="third">
+            <button onclick="closepopup()">Cancle</button>
+            <button onclick="closepopup()">CREATE</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+  
+  let popup=document.getElementById("popup");
+    function openpopup(){
+        popup.classList.add("open-popup")
+        body.style.visibility="low"
+    }
+    function closepopup(){
+        popup.classList.remove("open-popup")
+    }
+
+
+</script>
