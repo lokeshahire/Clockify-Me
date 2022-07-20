@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+}
+nav{
+    padding:10px 2%;
+    justify-content: space-between;
+    background-color: #fff;
+    position: fixed;
+    z-index:10;
+    height: 80px;
+    width:100%;
+    /* margin-bottom: 20px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#logo{
+    height: 50px;
+    width:200px;
+}
+.left{
+   width:700px;
+}
+.navbar .menu{
+    width: 28px;
+    margin-right: 25px;
+    margin-bottom: 16px;
+}
+.right{
+    display:flex;
+    width: 35% ;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.right .name{
+   width:160px;
+   display: flex;
+ justify-content:space-evenly
+}
+.right p{
+    font-size: large;
+
+}
+.action{
+height:47px;
+width: 60px;
+padding: 0px 0px 0px 20px;
+
+margin-top: -14px;
+}
+
+
+/* #sh{ 
+    text-align:center;
+    height: 25px;
+    width: 25px;
+    color:#fff;
+    margin-top:14px;
+    font-size: x-large;
+
+} */
+
+/* User Section Start */
+
+/* .action{
+    position: fixed;
+    top:20px;
+    right: 30px;
+} */
+.action .profile{
+    /* position: absolute; */
+    padding-top: 13px;
+}
+
+
+
+.action .menu::before{
+    content:'';
+    position:absolute;
+    top: -5px;
+    right: 28px;
+    width:20px;
+    height:20px;
+    background: #fff;
+    transform: rotate(45deg)
+}
+.action .menu {
+    position: absolute;
+    top:86px;
+    right: 0px;
+    padding: 10px 20px;
+    background:rgb(250, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:200px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    transition:0.5s;
+     visibility: hidden; 
+     opacity: 0;  
+}
+.action .menu.active{
+    top: 80px;
+    visibility: visible;
+    opacity:1;
+    z-index: 4;
+}
+
+.action .menu h3{
+    width: 100%;
+    font-size:18px;
+    padding: 20px 0;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.2rem;
+}
+.action .menu h3 span{
+    font-size: 14px;
+    color:black;
+    font-weight:400;
+
+}
+.action .menu ul li{
+    list-style: none;
+    padding:10px 0;
+    border-top:1px solid rgba(0,0,0,0.05);
+    display:flex;
+    align-items: center;
+}
+.action .menu ul li a{
+    display: inline-block;
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+    transition:0.5s;
+}
+.action .menu ul li a:hover{
+    color:#ff5d94;
+}
+
+/* ---------------------dark theme change start--------------- */
+label{
+    position:absolute;
+    width: 54px;
+    height: 27px;
+    right:20px;
+    border:2px solid;
+    border-radius:20px;
+    transition: 0.8s;
+}
+label:before{
+    position:absolute;
+    content:'';
+    width: 20px;
+    height: 19.5px;
+    border:2px solid;
+    border-radius:50%;
+    cursor:pointer;
+    background: #000;
+    transition: 0.8s;
+}
+label.active:before{
+    left:24px;
+    background: #03a9f4;
+    transition:0.8s
+}
+body.night{
+    background:#000;
+    color:#03a0f4;
+    transition: 0.8s;
+}
+
+/* --------------time tracker------------------ */
+.addproject{
+    width:79%;
+    height: 100px;
+    display:flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top:16%;
+    left:20%;
+     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px; 
+    padding-top: 20px;
+}
+.addproject input{
+ height: 60px;
+ width:580px;
+ padding-left:20px;
+ border:none;
+ transition:all 0.6s;
+}
+.addproject input:hover{
+    border: 1px solid gray;
+    transition:all 0.6s;
+}
+.addproject .project{
+    display:flex;
+    width: 100px;
+    justify-content: space-between;
+    padding-top:17px ;
+    border: none;
+}
+.addproject p{
+    color: #03a9f4;
+    font-size: 20px;
+    font-weight: bold;
+}
+.addproject .tag{
+    width: 38px;
+    padding-top: 8px;
+    border: none;
+}
+.addproject .dollar{
+    width: 40px;
+    border:1px solid black;
+    padding-top: 17px;
+    border: none;
+}
+.addproject .timer{
+    font-size: 28px;
+    width: 140px;
+    padding-top: 17px;
+    border: none;
+    display:flex;
+}
+.addproject .toggle{
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.addproject .toggle.active{
+    transform:scale(0.9)
+}
+
+.addproject .start{
+    padding-top: 8px;
+    border: none;
+}
+.addproject button:hover{
+   background: #065f8f;
+   color:white
+}
+
+.addproject button{
+    width: 80px;
+    height: 50px;
+    background: #03a9f4;
+    border:none;
+    
+}
+.addproject .twologo{
+  padding-right:40px;
+  padding-top: 17px;
+  border: none;
+}
+
+
+/* ---------------This week---------------- */
+.thisweek{
+    width:79%;
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    position: absolute;
+    top:35%;
+    left:20%;
+     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px; 
+    padding-top: 20px;
+    padding-left: 14px;
+    padding-right:14px;
+    background:#e4eaee;
+    
+}
+
+/* -----------------details--------------------- */
+.details{
+    width:79%;
+    height: 100px;
+    display:flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top:41.5%;
+    left:20%;
+    padding-top: 20px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 5px 1px, rgba(9, 30, 66, 0.25) 0px 10px 1px 1px;
+
+}
+.details .name{
+    padding-top: 20px;
+}
+.details .project{
+    display:flex;
+    width: 100px;
+    justify-content: space-between;
+    padding-top:17px ;
+    border: none;
+}
+.details .p{
+    color: #03a9f4;
+    font-size: 20px;
+    font-weight: bold;
+}
+.details .dollar{
+    padding-top:25px;
+}
+
+.details .tag{
+    width: 38px;
+    padding-top: 8px;
+    border: none;
+}
+.details .calender{
+    width:38px;
+    padding-top:8px;
+    border:none
+}
+.details .time{
+    padding-top: 25px;
+}
+.details .play{
+    width: 30px;
+    padding-top:8px;
+    border:none
+}
+.details .menubtn{
+    width:13px;
+    height: 50px;
+    padding-top:8px;
+    border:none
+}
+
+
+/* ------------delete button------------ */
+
+.details .menubtn ul li{
+    background-color: black;
+    color:white;
+    width: 130px;
+    height:50px;
+    line-height: 50px;
+    font-size: 25px;
+    list-style:none;
+    opacity:0.6;
+    text-align:center;
+}
+.details .menubtn ul li{
+    display: none;
+}
+.details .menubtn ul li:hover{
+    background:red;
+    opacity: 1;
+    transform:scale(1.2);
+    z-index:2;
+}
+.details .menubtn:hover  ul >li{
+    display: block;
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
