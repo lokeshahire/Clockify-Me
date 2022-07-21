@@ -150,9 +150,29 @@
 .platSec > div {
   width: 33%;
   align-items: flex-start;
+  margin-left: 10%;
+  margin-bottom: 80px;
 }
 
 .platSec h4 {
+  color: #495358;
+  line-height: 50px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.platSec1 {
+  display: flex;
+  width: 100%;
+}
+
+.platSec1 > div {
+  width: 25%;
+  align-items: flex-start;
+  margin-left: 14%;
+}
+
+.platSec1 h4 {
   color: #495358;
   line-height: 50px;
   font-size: 13px;
@@ -282,6 +302,143 @@
   color: #83add7;
   cursor: initial;
 }
+
+/* video */
+
+#videoPlay {
+  position: relative;
+}
+
+#playbutton {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+/* toggle */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* middle why track */
+
+.middle {
+  padding: 5%;
+  text-align: center;
+}
+
+.middleTab {
+  width: 70%;
+  margin: 10px auto 100px;
+}
+
+.midldeBox {
+  width: 30%;
+  margin: 5%;
+  text-align: left;
+  padding: 5%;
+  box-shadow: 1px 1px 4px rgb(233, 232, 232);
+  transition: all 0.3s ease;
+  border-top: 3px #45a9f3 solid;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.midldeBox:hover {
+  transform: translateY(-1%);
+  box-shadow: 1px 1px 4px rgb(167, 165, 165);
+  cursor: pointer;
+}
+
+.midldeBox i {
+  font-size: 45px;
+  color: #45a9f3;
+  line-height: 70px;
+}
+
+.midldeBox b {
+  color: #53565a;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.midldeBox p {
+  all: unset;
+  font-size: 16px;
+  color: #767b80;
+}
+
+.midldeBox span {
+  line-height: 50px;
+  font-size: 16px;
+  color: #45a9f3;
+}
+
+.midldeBox * {
+  display: block;
+  line-height: 40px;
+}
+
 /* common css */
 
 * {
@@ -316,12 +473,12 @@ p {
 
 .freebtn {
   display: block;
-  width: 280px;
+  width: 320px;
   height: 55px;
   font-size: 16px;
   text-transform: uppercase;
   margin: 20px auto 5px;
-  background-color: #3788d1;
+  background-color: #0288d1;
   color: white;
   outline: none;
   border: none;
@@ -354,3 +511,5 @@ p {
   background-color: #5fbdf7;
   color: white;
 }
+
+/* extra */
