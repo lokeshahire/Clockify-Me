@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/project part/style/project.css">
     <title>Document</title>
 </head>
-<body>
+<body class="body" >
+
     <div id="navbar"></div>
     <div id="container">
         <div id="sidebar">
@@ -26,7 +27,7 @@
             <img src="https://app.clockify.me/assets/nav-icons/dashboard.svg" alt="">
             <P>DASHBOARD</P>
           </div>
-          <div id="cracker">
+          <div id="cracker" onclick="openreportpopup()">
             <img src="https://app.clockify.me/assets/nav-icons/reports.svg" alt="">
             <P>REPORTS &nbsp;  &nbsp; ></P>
           </div>
@@ -54,7 +55,7 @@
             <p>SETTING</p>
           </div>
         </div>
-        <div id="project">
+        <div id="project" onclick="closeArchive()">
             <div id="div1">
                 <p>Projects</p>
                 <button  onclick="openpopup()">CREATE NEW PROJECT</button> 
@@ -62,8 +63,9 @@
             <div id="div2">
               <div>FILTER</div>
 
-              <select name="client" id="client">
+              <select name="client" id="Active"onChange="All()">
                 <option value="">Active</option>
+                <option value="All" >All</option>
               </select>
 
                 <select name="client" id="client">
@@ -77,8 +79,8 @@
                   <select name="client" id="client">
                     <option value="">Billing</option>
                   </select>
-              <input type="text" placeholder="project name">
-              <button>Apply Filter</button>
+              <input type="text" id="projectname" placeholder="project name">
+              <button id="applyFilter" onclick="filter()">Apply Filter</button>
             </div>
 
             <div id="div3">
@@ -94,33 +96,45 @@
                   <th><a href="">ACCESS</a> </th>
                 </thead>
                 <tbody>
-
+                    <!-- all content appended here -->
                 </tbody>
               </table>
             </div>
         </div>
     </div>
 
-
+<!-----------------------CREATE NEW PROJECT  POP UP html ------------------------>
     <!-- <button type="submit" class="btn" onclick="openpopup()">create project</button> -->
+   <!-- SET ONCLICK FUNCTION IN A BUTTON TO RUN openpopup FUNCTION  -->
     <div id="popup" class="popup">
         <p>Create new project</p>
         <hr>
         <div class="first">
-            <input type="text" placeholder="Enter project name">
-            <input type="text" placeholder="Enter client name">
+            <input type="text" id="projectName" placeholder="Enter project name">
+            <input type="text" id="clientName" placeholder="Enter client name">
         </div>
         <div class="second">
-            <input type="checkbox"> <span>Public</span>
+            <input type="checkbox" onclick="check()" id="checkbox" value="public"> <span>Public</span>
             <input type="text" placeholder="No template">
         </div>
         <div class="third">
             <button onclick="closepopup()">Cancle</button>
-            <button onclick="closepopup()">CREATE</button>
+            <button  onclick="create()">CREATE</button>
         </div>
     </div>
-
-
+    <!-- -----------------------REPORT POP UP HTML------------------------------ -->
+    <div id="reportPopup" class="reportPopup">
+        <h4 onclick="closereportpopup()">x</h4>
+       <p>Summary</p>
+       <p>Detailed</p>
+       <p>Weakly</p>
+       <p>Shared</p>
+    </div>
+    <!---------------------------- ARCHIVE POPUP HTML--------------------------------- -->
+    <div id="Archive" class="Archive">
+        <p>Archive</p>
+        <p>Set Template</p>
+    </div>
 </body>
 </html>
 <script src="/project part/scripts/project.js"></script>

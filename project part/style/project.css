@@ -156,11 +156,12 @@
 }
 
 table{
-    width: 80%;
+    width: 98%;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 15px;
     font-weight: lighter;
+    justify-content: center;
 }
 table th{
     margin-left: 0px;
@@ -175,19 +176,19 @@ table th{
 
 
 
+/* -----------------------CREATE PROJECTPOPUP CSS-------------- */
 
-
-.btn{
+/* .btn{
     margin-left:1210px;
     top: 10%;
-}
+} */
 .popup{
     width: 400px;
     height: 230px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%,-50%) scale(.1);
@@ -204,15 +205,13 @@ table th{
     top: 50%;
     transform: translate(-50%,-50%) scale(1); 
 }
-.popup button{
-    /* width: 100%; */
 
-}
 .popup p{
     font-size: 30px;
     color: grey;
-    padding: 10px;
+    /* padding: 10px; */
     padding-bottom:15px;
+    margin-top: 10px;
 }
 #popup>.first>input{
     width: 150px;
@@ -251,4 +250,90 @@ table th{
    background-color:  rgb(20, 138, 218);
    color: white;
 }
+
+
+
+/*-------------------------------- report popup---------------------------------------------- */
+
+.reportPopup{
+    position: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    top: 47%;
+    right: 77%;
+    /* transform: translate(-50%,-50%) ; */
+    visibility: hidden;
+    /* transition: transform 0.4s, */
+    width: 150px;
+}
+.open-reportPopup{
+    visibility: visible;
+    
+}
+.reportPopup>h4{
+    margin-top: -3%;
+    margin-left: 134px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 100;
+}
+.reportPopup p{
+    font-size: 20px;
+    /* margin: 15px; */
+    color: rgb(78, 75, 75);
+    padding: 12px;
+}
+.reportPopup p:hover{
+    background-color: rgb(212, 206, 206);
+}
+thead{
+    height: 30px;
+    background-color: white;
+}
+tbody>tr{
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    height: 45px;
+    background-color: rgb(246, 249, 252);
+    border: none;
+    width: 100%;
+}
+tbody>tr>td{
+    border: none;
+}
+tr:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+tr img{
+    width: 20px;
+    margin-top: 8px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.Archive{
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    top: 64%;
+    left: 84%;
+    font-size: 20px;
+    /* transform: translate(-50%,-50%) ; */
+    visibility: hidden;
+    /* transition: transform 0.4s, */
+    width: 120px;
+    padding: 5px;
+}
+.open-Archive{
+    visibility: visible;
+    
+}
+
+
 
