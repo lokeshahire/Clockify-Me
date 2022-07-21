@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/timetracker.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+    <div class="left">
+        <img class="menu" src="./images/menu.png" alt="">
+        <img id="logo" src="./images/download.png" alt="">
+    </div>
+    <div class="right">
+        <div class="name"> 
+            <p>Anurag Gupta</p>
+             <i class="fa-solid fa-angle-down"></i> 
+        </div>
+        <div class="question">
+            <i class="fa-solid fa-circle-question" id="question"></i>
+        </div>
+        <div class="notification">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+        <div class="action">
+            <div class="profile" onclick="menuToggle();">
+                <i class="fa-solid fa-user"></i>
+             </div>
+                 <div class="menu">
+                    <h3>Anurag Gupta <br> <span>anurag@gmail.com</span></h3>
+                    <ul>
+                    <li><a href="#">Profile settings</a></li>
+                    <li><a href="#">Dark theme</a> <label for="" id="dark-change"></label></li>
+                    <li><a href="#">Download apps</a></li>
+                    <li><a href="#">Try chat app</a> </li>
+                    <li><a href="login.html">Logout</a></li>
+                    </ul>
+           </div>
+        </div>
+    </div> 
+    </nav> 
+
+   <!---------------------------- time traker---------------------->
+   <div class="addproject">
+    <div class="form">
+        <form action="" id="form">
+            <input type="text" placeholder="What are you working on?" id="query">
+        </form>
+    </div>
+    <div class="project">
+        <!-- <div class="addbtn"> -->
+            <i class="fa-solid fa-circle-plus" id="plus"></i>
+        <!-- </div> -->
+        <!-- <div class="project"> -->
+            <p>Project</p>
+        <!-- </div> -->
+    </div>
+     <div class="tag">
+        <!-- <i class="fa-solid fa-tag"></i> -->
+    <img src="./images/tag.jpg" alt="" class="tag">
+    </div>
+     <div class="dollar">
+        <i class="fa-regular fa-dollar-sign"></i>
+     </div>
+     <div class="timer" id="timer">
+     00:00:00
+     </div>
+     <div class="start">
+      <button class="toggle" id="startStop" onclick="startStop()">Start</button>
+     </div>
+     <div class="twologo">
+        <i class="fa-regular fa-clock"></i> <br>
+        <br>
+        <i class="fa-solid fa-bars"></i>
+     </div>
+   </div>
+
+   <!------------------- time tracket bottom part  ------------------>
+   <div class="week">
+    <div class="thisweek">
+        <p>This week</p>
+        <p>Week total: 00:00:00</p>
+    </div>
+    </div>
+    <div class="details">
+        <div class="name">
+            <p>name</p>
+        </div>
+        <div class="project">
+            <!-- <div class="addbtn"> -->
+                <i class="fa-solid fa-circle-plus" id="plus"></i>
+            <!-- </div> -->
+            <!-- <div class="project"> -->
+                <p class="p">Project</p>
+            <!-- </div> -->
+        </div>
+  
+    <div class="tag">
+        <!-- <i class="fa-solid fa-tag"></i> -->
+        <img src="./images/tag.jpg" alt="" class="tag">
+     </div>
+     <div class="dollar">
+        <i class="fa-regular fa-dollar-sign"></i>
+     </div>
+     <div class="calender">
+        <img src="./images/calendar.jpg" alt="" class="calender">
+     </div>
+     <div class="time">
+      <ol class="lap_box"></ol>
+     </div>
+     <div class="play">
+        <img src="./images/play.jpg" alt="" class="play">
+     </div>
+     <div class="menubtn">
+        <img src="./images/menu-dots-vertical.jpg" alt="" class="menubtn">
+        <ul class="subclass">
+            <li class="delete">Delete</li>
+        </ul>
+     </div>
+   
+    </div>
+    
+</body>
+</html>
+<script src="./scripts/timetracker.js" ></script>
+<script src="https://kit.fontawesome.com/54a5973b68.js" crossorigin="anonymous"></script>
