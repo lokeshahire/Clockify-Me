@@ -1,234 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-     
-        #body{
-            
-            display: flex;
-            border: 1px solid red;
-        }
-        #sidebar{
-            width: 5%;
-            border: 1px solid green;
-        }
-        #report{
-            background-color: #f2f6f8;
-            width: 95%;
-            border: 1px solid black;
-        }
-        #box1{
-            width: 95%;
-            padding: 10px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            height: 40px;
-        }
-        #part2{
-            display: flex;
-            gap: 20px;
-            justify-content: space-evenly;
-            align-items: center;
-            border: 1px solid rgb(191, 191, 191);
-        }
-        #empty1,#empty2,#empty3,#empty4{
-            height: 25px;
-            text-align: center;
-        }
-        #part1>button{
-            height: 40px;
-            width: 40%;
-        }
-        #part1{
-            display: flex;
-            
-        }
-        #box2{
-            width: 94%;
-            padding: 10px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            height: 60px;
-            border: 1px solid rgb(191, 191, 191);
-            background-color: #ffffff;
+    <link rel="icon" href="https://clockify.me/assets/images/favicon.ico">
+    <link rel="stylesheet" href="./style/report.css" />
 
-        }
-        #part3{
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-        #btn1{
-            background-color: rgb(63, 194, 214);
-          width: 150px;
-          margin: 8px;
-        }
-        button{
-            cursor: pointer;
-            background-color: #ffffff;
-          border: 1px solid rgb(191, 191, 191) ;
-            
-        
-        }
-        button:hover{
-            background-color: #E4EAEE;
-        }
-        #box3{
-            width: 94%;
-            padding: 10px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            height: 40px;
-            border: 1px solid rgb(191, 191, 191);
-            background-color:#e4eaee;
-        }
-        #part4{
-            display: flex;
-            gap: 7px;
-            justify-content: center;
-            align-items: center;
-        }
-        #part5{
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-        #box4{
-            height: 320px;
-            width: 94%;
-            padding: 10px;
-            margin: auto;
-            background-color: white;
-            border: 1px solid rgb(191, 191, 191);
-        }
-        #box5{
-            width: 94%;
-            margin: auto;
-            display: flex;
-            justify-content: flex-start;
-            text-align: center;
-            align-items: center;
-            height: 40px;
-            gap: 20px;
-          padding: 10px;
-            border: 1px solid rgb(191, 191, 191);
-            background-color:#e4eaee;
-        }
-        #box6{
-            padding: 10px;
-            background-color: white;
-            height: 320px;
-            width: 94%;
-            margin: auto;
-            border: 1px solid rgb(191, 191, 191);
-        }
-        select{
-            border: none;
-        }
-
-
-    </style>
-</head>
-<body>
-    <div id="navbar" ></div>
-    <div id="body">
-        <div id="sidebar">vfdgegfgg</div>
-        <div id="report">
-            <div id="empty1"></div>
-            <div id="box1">
-                <div id="part1">
-                    <button>REPORTS</button>
-                    <button>Summary</button>
-                    <button>Detailed</button>
-                    <button>Weekly</button>
-                    <button>Shared</button>
-                </div>
-                <div id="part2">
-                    <div>This week</div>
-                    
-                    <button><</button>
-                    <button>></button>
-                </div>
-            </div>
-            <div id="empty2"></div>
-            <div id="box2">
-                <div id="part3">
-                    <div>FILTER
-                        <select name="" id=""></select>
-                    </div>
-                    <div>Team</div>
-                    <div>Client</div>
-                    <div>Project</div>
-                    <div>Task</div>
-                    <div>Tag</div>
-                    <div>Status</div>
-                    <div>Description</div>
-                </div>
-                <button id="btn1">Apply</button>
-            </div>
-            <div id="empty3"></div>
-            <div id="box3">
-                <div id="part4">
-                    <div>Time:</div>
-                    <div id="time"><h3>00:12:52</h3>
-                        </div>
-                    <div>Billable:</div>
-                    <div id="bill"><h3>00:12:52</h3></div>
-                    <div>Amount:</div>
-                    <div id="amount"><h3>0:00 USD</h3></div>
-                </div>
-                <div id="part5">
-                  <div>Export
-                  </div>
-                  <div>Print</div>
-                  <div>Share</div>
-                  <div>Rounding</div>
-                  <div>Show amount</div>
-                </div>
-                
-            </div>
-            <div id="box4">
-
-            </div>
-            <div id="empty4"></div>
-            <div id="box5">
-                <div>Group by:</div>
-                <select name="" id="">
-                    <option value="">Project</option>
-                    <option value="">Client</option>
-                    <option value="">User</option>
-                    <option value="">Group</option>
-                    <option value="">Tag</option>
-                    <option value="">Month</option>
-                    <option value="">Week</option>
-                    <option value="">Date</option>
-                   
-                </select>
-                <select name="" id="">
-                    <option value="">Description</option>
-                    <option value="">Client</option>
-                    <option value="">User</option>
-                    <option value="">Group</option>
-                    <option value="">Tag</option>
-                    <option value="">Month</option>
-                    <option value="">Week</option>
-                    <option value="">Date</option>
-                   
-                </select>
-                <div>Show estimate</div>
-            </div>
-            <div id="box6"></div>
-        </div>
-    </div>
+    <!-- calender links -->
+    <link rel="stylesheet" href="./style/timetracker.css">
     
-</body>
+    <!-- graph -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+   
+
+    <nav class="navbar" id="navbar">
+
+    </nav>
+    <div id="body">
+      <div id="sidebar">
+       
+      </div>
+      <div id="report">
+        <div id="empty1"></div>
+        <div id="box1">
+          <div id="part1">
+            <button>REPORTS</button>
+            <button>Summary</button>
+            <button>Detailed</button>
+            <button>Weekly</button>
+            <button>Shared</button>
+          </div>
+          <div id="part2">
+            <button id="calender"  ><a href="./calender.html"><img src="data:image/png;base64,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" alt=""></a></button>
+
+            <div>This week</div>
+
+            <button><</button>
+            <button>></button>
+          </div>
+        </div>
+        <div id="empty2"></div>
+        <div id="box2">
+          <div id="part3">
+            <div>
+              FILTER
+              <select name="" id=""></select>
+            </div>
+            <div>Team</div>
+            <div>Client</div>
+            <div>Project</div>
+            <div>Task</div>
+            <div>Tag</div>
+            <div>Status</div>
+            <div>Description</div>
+          </div>
+          <button id="btn1">Apply</button>
+        </div>
+        <div id="empty3"></div>
+        <div id="box3">
+          <div id="part4">
+            <div>Time:</div>
+            <div id="time"><h3>00:12:52</h3></div>
+            <div>Billable:</div>
+            <div id="bill"><h3>00:12:52</h3></div>
+            <div>Amount:</div>
+            <div id="amount"><h3>0:00 USD</h3></div>
+          </div>
+          <div id="part5">
+            <div>Export</div>
+            <div>Print</div>
+            <div>Share</div>
+            <div>Rounding</div>
+            <div>Show amount</div>
+          </div>
+        </div>
+        <div id="box4">
+          <div style="width: 100%; height: 100%" class="card">
+            <div
+              style="width: 100%; height: 100%"
+              id="chart4"
+              class="card-block"
+            ></div>
+          </div>
+        </div>
+        <div id="empty4"></div>
+        <div id="box5">
+          <div>Group by:</div>
+          <select name="" id="">
+            <option value="">Project</option>
+            <option value="">Client</option>
+            <option value="">User</option>
+            <option value="">Group</option>
+            <option value="">Tag</option>
+            <option value="">Month</option>
+            <option value="">Week</option>
+            <option value="">Date</option>
+          </select>
+          <select name="" id="">
+            <option value="">Description</option>
+            <option value="">Client</option>
+            <option value="">User</option>
+            <option value="">Group</option>
+            <option value="">Tag</option>
+            <option value="">Month</option>
+            <option value="">Week</option>
+            <option value="">Date</option>
+          </select>
+          <div>Show estimate</div>
+        </div>
+        <div id="box6">
+          <div style="width: 100%; height: 100%" class="card">
+            <div
+              style="width: 100%; height: 100%"
+              id="chart4"
+              class="card-block"
+            ></div>
+        </div>
+      </div>
+    </div>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"
+    ></script>
+    <script type="text/javascript">
+      jQuery(function ($) {
+        var data1 = [12, 500, 4, 2, 12, 3, 4, 17, 22, 34, 54, 67];
+        var data2 = [3, 9, 12, 14, 22, 32, 45, 12, 67, 45, 55, 7];
+        var data3 = [23, 19, 11, 134, 242, 352, 435, 22, 637, 445, 555, 57];
+        var data4 = [100, 19, 112, 114, 212, 332, 435, 132, 67, 45, 55, 7];
+
+        $("#chart1").shieldChart({
+          exportOptions: {
+            image: false,
+            print: false,
+          },
+          axisY: {
+            title: {
+              text: "Break-Down for selected quarter",
+            },
+          },
+          dataSeries: [
+            {
+              seriesType: "line",
+              data: data1,
+            },
+          ],
+        });
+
+        $("#chart2").shieldChart({
+          exportOptions: {
+            image: false,
+            print: false,
+          },
+          axisY: {
+            title: {
+              text: "Break-Down for selected quarter",
+            },
+          },
+          dataSeries: [
+            {
+              seriesType: "polarbar",
+              data: data2,
+            },
+          ],
+        });
+
+        $("#chart3").shieldChart({
+          exportOptions: {
+            image: false,
+            print: false,
+          },
+          axisY: {
+            title: {
+              text: "Break-Down for selected quarter",
+            },
+          },
+          dataSeries: [
+            {
+              seriesType: "area",
+              data: data3,
+            },
+          ],
+        });
+
+        $("#chart4").shieldChart({
+          exportOptions: {
+            image: false,
+            print: false,
+          },
+          axisY: {
+            title: {
+              text: "Break-Down for selected quarter",
+            },
+          },
+          dataSeries: [
+            {
+              seriesType: "stepline",
+              data: data4,
+            },
+          ],
+        });
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
+
+<script src="./script/report.js" type="module"></script>
+<script src="./scripts/navbar.js" type="module"></script>
+<script src="./scripts/sidebar.js" type="module"></script>
