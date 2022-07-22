@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+}
+nav{
+    padding:10px ;
+    justify-content: space-between;
+    background-color: #fff;
+    position: fixed;
+    z-index:10;
+    height: 80px;
+    width:100%;
+    /* margin-bottom: 20px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#logo{
+    height: 50px;
+    width:200px;
+}
+.left{
+   width:700px;
+}
+.navbar .menu{
+    width: 28px;
+    margin-right: 25px;
+    margin-bottom: 16px;
+}
+.right{
+    display:flex;
+    width: 35% ;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.right .name{
+   width:160px;
+   display: flex;
+ justify-content:space-evenly
+}
+.right p{
+    font-size: large;
+}
+.navbar .question{
+    padding-top: 8px;
+}
+.navbar .notification{
+    padding-top: 8px;
+}
+.btn{
+    height: 35px;
+    width: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    color:  #5FBDF7;
+    border-radius: 5px;
+    border: 2px solid #5FBDF7;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.btn:hover{
+    background-color: #5FBDF7;
+    color: white;
+}
+
+/* --------------drop down------------------- */
+.dropdown{
+    padding-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+.dropbtn{
+    color: #333;
+    /* padding: 25px; */
+    font-size: 20px;
+    padding-left: 10px;
+}
+.dropdown-content{
+    left: -140px;
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 18px;
+    color: rgb(91,115,151);
+    border-radius: 3px;
+    line-height: 20px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #999;
+     color: #FFFFFF;
+      border-radius: 2px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown:hover .dropbtn {
+        text-decoration: none;
+        color: #999;
+        font-weight: 500;
+        background-color:rgb(255,255,255);
+        width: 120px;
+        height: 15px;
+        border-radius: 3px;
+        }
+
+
+/* ---------------------dark theme change start--------------- */
+label{
+    position:absolute;
+    width: 54px;
+    height: 27px;
+    right:20px;
+    border:2px solid;
+    border-radius:20px;
+    transition: 0.8s;
+}
+label:before{
+    position:absolute;
+    content:'';
+    width: 20px;
+    height: 19.5px;
+    border:2px solid;
+    border-radius:50%;
+    cursor:pointer;
+    background: #000;
+    transition: 0.8s;
+}
+label.active:before{
+    left:24px;
+    background: #03a9f4;
+    transition:0.8s
+}
+body.night{
+    background:#000;
+    color:#03a0f4;
+    transition: 0.8s;
+}
