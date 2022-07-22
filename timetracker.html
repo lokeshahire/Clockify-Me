@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockify</title>
+    <link rel="stylesheet" href="./style/timetracker.css">
+    <link rel="icon" href="https://clockify.me/assets/images/favicon.ico">
+    <!-- <link rel="stylesheet" href="/project part/style/project.css"> -->
+
+</head>
+<body>
+    <nav class="navbar" id="navbar"></nav> 
+
+     <!----------------------side bar ----------------------------->
+     <div id="sidebar">
+        <div id="tracker">
+          <img src="https://app.clockify.me/assets/nav-icons/time-tracker.svg" alt="">
+          <P>TIME TRACKER</P>
+        </div>
+        <div id="cracker">
+          <img src="https://app.clockify.me/assets/nav-icons/calendar.svg" alt="">
+          <p>CALENDER</p>
+        </div>
+        <div id="analyse_manage">
+          <p>ANALYZE</p>
+        </div>
+        <div id="cracker">
+          <img src="https://app.clockify.me/assets/nav-icons/dashboard.svg" alt="">
+          <P>DASHBOARD</P>
+        </div>
+        <div id="cracker" onclick="openreportpopup()">
+          <img src="https://app.clockify.me/assets/nav-icons/reports.svg" alt="">
+          <P>REPORTS &nbsp;  &nbsp; ></P>
+        </div>
+        <div id="analyse_manage">
+          <P>MANAGE</P>
+        </div>
+        <div id="cracker">
+          <img src="https://app.clockify.me/assets/nav-icons/projects.svg" alt="">
+          <p>PROJECTS</p>
+        </div>
+        <div id="cracker">
+          <img src="https://app.clockify.me/assets/nav-icons/teams.svg" alt="">
+          <p>TEAM</p>
+        </div>
+        <div id="cracker">
+          <img src="https://app.clockify.me/assets/nav-icons/clients.svg" alt="">
+          <p>CLIENT</p>
+        </div>
+        <div id="cracker">
+          <img src="https://app.clockify.me/assets/nav-icons/tags.svg" alt="">
+          <p>TAGS</p>
+        </div>
+        <div id="cracker">
+          <img src="https://app.clockify.me/assets/nav-icons/settings.svg" alt="">
+          <p>SETTING</p>
+        </div>
+      </div>
+   <!---------------------------- time traker---------------------->
+   <div class="addproject">
+    <div class="form">
+        <form action="" id="form">
+            <input type="text" placeholder="What are you working on?" id="query">
+        </form>
+    </div>
+    <div class="project">
+            <i class="fa-solid fa-circle-plus" id="plus"></i>
+            <p>Project</p>
+    </div>
+     <div class="tag">
+        <img src="https://app.clockify.me/assets/nav-icons/tags.svg" alt="" class="tag">
+    </div>
+     <div class="dollar">
+       <p>$</p>
+     </div>
+     <div class="timer" id="timer">
+     00:00:00
+     </div>
+     <div class="start">
+      <button id="timer_start" class="toggle">Start</button>
+     </div>
+     <div class="twologo">
+        <img src="https://app.clockify.me/assets/nav-icons/time-tracker.svg" alt="">
+        <br>
+        <br>
+      <img src="https://app.clockify.me/assets/ui-icons/list-blue.svg" alt="">
+     </div>
+   </div>
+
+   <tbody>
+
+   </tbody>
+
+   <!------------------- time tracket bottom part  ------------------>
+   <div class="week">
+    <div class="thisweek">
+        <p>This week</p>
+        <p>Week total: 00:00:00</p>
+    </div>
+    </div>
+    <div  id="timetracker_body">
+      
+    </div>
+
+
+
+
+  
+    
+</body>
+</html>
+<script src="./scripts/timetracker.js" ></script>
+<script src="https://kit.fontawesome.com/54a5973b68.js" crossorigin="anonymous"></script>
+<script src="./scripts/navbar.js" type="module"></script>
