@@ -122,9 +122,12 @@ form>div {
 
 #bottom>:last-child {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 select {
     border: transparent;
+    font-size: 15px;
+    color: #898989;
+    background-color: rgb(242, 246, 248);
 }

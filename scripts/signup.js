@@ -8,11 +8,13 @@ document.querySelector("form").addEventListener("submit", function () {
     }
 
     if (checksignupcredential(obj.email) === true) {
-        alert("You are Successfully Signup");
+        alert("Signup Successfully. Please log in");
         arr.push(obj);
         localStorage.setItem("userData", JSON.stringify(arr));
+        window.location.href="login.html";
     } else {
-        alert("Your account is already exist")
+        alert("Account already exist. Please log in")
+        window.location.href="login.html";
     }
 
 })
