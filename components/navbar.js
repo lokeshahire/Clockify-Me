@@ -6,7 +6,7 @@ let navbar =()=>{
     </div>
     <div class="right">
         <div class="name"> 
-            <h4><script>document.write(localStorage.getItem("email"))</script></h4>
+            <p id="h"></p>
              <i class="fa-solid fa-angle-down"></i> 
         </div>
         <div>
@@ -26,7 +26,7 @@ let navbar =()=>{
                     <a href="#">Profile settings</a>
                     <a href="#">Dark theme</a> <label for="" id="dark-change"></label>
                     <a href="#">Try chat app</a>
-                    <a href="" onclick="logout">Logout</a>
+                    <a href="login.html">Logout</a>
                 </div>
             </div>  
         </div>
