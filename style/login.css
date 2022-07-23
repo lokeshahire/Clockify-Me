@@ -1,6 +1,7 @@
 body {
     display: flex;
     font-family: sans-serif;
+    background-color:  rgb(242, 246, 248);
 }
 
 body>:first-child {
@@ -72,7 +73,7 @@ form>div {
 }
 
 #chbox>span {
-    margin-right: 15%;
+    margin-right: 5%;
     color: rgb(74, 74, 74);
 }
 
@@ -161,6 +162,6 @@ p+p {
 
 #schedule>img {
     width: 97%;
-    height: 480px;
+    height: 100%;
     margin-left: 15px;
 }

@@ -11,7 +11,7 @@ document.querySelector("form").addEventListener("submit", function () {
         alert("You are Successfully Signup");
         arr.push(obj);
         localStorage.setItem("userData", JSON.stringify(arr));
-    } else {
+    }else {
         alert("Your account is already exist")
     }
 
