@@ -20,10 +20,9 @@
 .shortcut a{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     width: 250px;
-     /* flex-wrap: wrap;  */
-   
+    justify-content: space-between;
      padding: 1px;
      padding-left: 15px;
 }

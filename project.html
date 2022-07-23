@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/project.css">
     <link rel="stylesheet" href="./style/sidebar.css">
+    <!-- <link rel="stylesheet" href="./style/navbar.css"> -->
     <link rel="icon" href="https://clockify.me/assets/images/favicon.ico">
-    <link rel="stylesheet" href="./style/timetracker.css">
     <title>Clockify</title>
 </head>
 <body>
 
     <nav class="navbar" id="navbar">
  
-      <!-- <div class="left">
+      <div class="left">
         <img class="menu" src="./images/menu.png" alt="">
         <img id="logo" src="./images/download.png" alt="">
     </div>
     <div class="right">
         <div class="name"> 
-            <h4></h4>
+            <h4><script>document.write(localStorage.getItem("email"))</script></h4>
              <i class="fa-solid fa-angle-down"></i> 
         </div>
         <div>
@@ -44,12 +44,38 @@
                 </div>
             </div>  
         </div>
-    </div>  -->
-    <!-- </nav>
+    </div> 
+    </nav>
     
-    <div class="sidebar"> </div>
+    <div class="sidebar">
+        <!-- <div class="shortcut">
+            <a href=""><img src="https://app.clockify.me/assets/nav-icons/time-tracker.svg" alt=""><span>TIME TRACKER</span></a>
+          
+            <a href=""><img src="https://app.clockify.me/assets/nav-icons/calendar.svg" alt=""><span>CALENDER</span></a>
+           
+            <a href=""><img src="" alt=""><span>ANALYZE</span></a>
+           
+            <a href=""><img src="./images/library.png" alt=""><span>DASHBOARD</span></a>
+           
+            <a href=""><img src="https://app.clockify.me/assets/nav-icons/reports.svg" alt="" onclick="openreportpopup()"><span>REPORTS</span></a>
+           
+            <a href=""><img src="" alt=""><span>MANAGE</span></a>
+           
+            <a href=""><img src="https://app.clockify.me/assets/nav-icons/projects.svg" alt=""><span>PROJECTS</span></a>
+           
+            <a href=""><img src="https://app.clockify.me/assets/nav-icons/teams.svg" alt=""><span>TEAM</span></a>
 
-      <div id="project" onclick="closeArchive()">
+            <a href=""><img src="https://app.clockify.me/assets/nav-icons/clients.svg" alt=""><span>CLIENT</span></a>
+
+            <a href=""><img src="https://app.clockify.me/assets/nav-icons/tags.svg" alt=""><span>TAGS</span></a>
+
+            <a href=""><img src="https://app.clockify.me/assets/nav-icons/settings.svg" alt=""><span>SETTING</span></a>
+            <hr>
+        </div> -->
+       
+      </div>
+
+      <div id="project">
         <div id="div1">
             <p>Projects</p>
             <button  onclick="openpopup()">CREATE NEW PROJECT</button> 
@@ -80,151 +106,6 @@
         <div id="div3">
             <h4>Projects</h4>
        
-        <table>
-            <thead>
-              <th><a href=""> NAME</a></th>
-              <th><a href=""> CLIENT</a></th>
-              <th><a href="">TRACKED</a> </th>
-              <th><a href="">AMOUNT</a></th>
-              <th><a href="">PROGRESS</a> </th>
-              <th><a href="">ACCESS</a> </th>
-            </thead>
-            <tbody> -->
-                <!-- all content appended here -->
-            <!-- </tbody>
-          </table>
-        </div>
-    </div> -->
-    <!-----------------------CREATE NEW PROJECT  POP UP html ------------------------>
-    <!-- <button type="submit" class="btn" onclick="openpopup()">create project</button> -->
-   <!-- SET ONCLICK FUNCTION IN A BUTTON TO RUN openpopup FUNCTION  -->
-    <!-- <div id="popup" class="popup">
-        <p>Create new project</p>
-        <hr>
-        <div class="first">
-            <input type="text" id="projectName" placeholder="Enter project name">
-            <input type="text" id="clientName" placeholder="Enter client name">
-        </div>
-        <div class="second">
-            <input type="checkbox" onclick="check()" id="checkbox" value="public"> <span>Public</span>
-            <input type="text" placeholder="No template">
-        </div>
-        <div class="third">
-            <button onclick="closepopup()">Cancle</button>
-            <button  onclick="create()">CREATE</button>
-        </div>
-    </div> -->
-    <!-- -----------------------REPORT POP UP HTML------------------------------ -->
-    <!-- <div id="reportPopup" class="reportPopup">
-        <h4 onclick="closereportpopup()">x</h4>
-       <p>Summary</p>
-       <p>Detailed</p>
-       <p>Weakly</p>
-       <p>Shared</p>
-    </div> -->
-    <!---------------------------- ARCHIVE POPUP HTML--------------------------------- -->
-    <!-- <div id="Archive" class="Archive">
-        <p>Archive</p>
-        <p>Set Template</p>
-    </div>
-     
-</body>
-</html>
-
-<script src="./scripts/project.js"></script>
-<script src="./scripts/navbar.js" type="module"></script>
-<script src="./scripts/sidebar.js" type="module"></script>
-<script src="https://kit.fontawesome.com/54a5973b68.js" crossorigin="anonymous"></script>
- --> 
-
-
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/project.css">
-    <link rel="stylesheet" href="./style/sidebar.css">
-    <link rel="stylesheet" href="./style/timetracker.css">
-    <link rel="icon" href="https://clockify.me/assets/images/favicon.ico">
-    <title>Clockify</title>
-</head>
-<body>
-    <nav class="navbar" id="navbar">
-      <!-- <div class="left">
-        <img class="menu" src="./images/menu.png" alt="">
-        <img id="logo" src="./images/download.png" alt="">
-    </div>
-    <div class="right">
-        <div class="name">
-            <h4><script>document.write(localStorage.getItem("email"))</script></h4>
-             <i class="fa-solid fa-angle-down"></i>
-        </div>
-        <div>
-            <a href="upgrade.html"><button class="btn">Upgrade</button></a>
-         </div>
-        <div class="question">
-            <i class="fa-solid fa-circle-question" id="question"></i>
-        </div>
-        <div class="notification">
-            <i class="fa-solid fa-bell"></i>
-        </div>
-        <div>
-            <i class="fas fa-user"></i>
-            <div class="dropdown">
-                <span class="dropbtn">Profile</span>
-                <div class="dropdown-content">
-                    <a href="#">Profile settings</a>
-                    <a href="#">Dark theme</a> <label for="" id="dark-change"></label>
-                    <a href="#">Try chat app</a>
-                    <a href="" onclick="logout">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    </nav>
-    <div class="sidebar">
-        <!-- <div class="shortcut">
-            <a href=""><img src="https://app.clockify.me/assets/nav-icons/time-tracker.svg" alt=""><span>TIME TRACKER</span></a>
-            <a href=""><img src="https://app.clockify.me/assets/nav-icons/calendar.svg" alt=""><span>CALENDER</span></a>
-            <a href=""><img src="" alt=""><span>ANALYZE</span></a>
-            <a href=""><img src="./images/library.png" alt=""><span>DASHBOARD</span></a>
-            <a href=""><img src="https://app.clockify.me/assets/nav-icons/reports.svg" alt="" onclick="openreportpopup()"><span>REPORTS</span></a>
-            <a href=""><img src="" alt=""><span>MANAGE</span></a>
-            <a href=""><img src="https://app.clockify.me/assets/nav-icons/projects.svg" alt=""><span>PROJECTS</span></a>
-            <a href=""><img src="https://app.clockify.me/assets/nav-icons/teams.svg" alt=""><span>TEAM</span></a>
-            <a href=""><img src="https://app.clockify.me/assets/nav-icons/clients.svg" alt=""><span>CLIENT</span></a>
-            <a href=""><img src="https://app.clockify.me/assets/nav-icons/tags.svg" alt=""><span>TAGS</span></a>
-            <a href=""><img src="https://app.clockify.me/assets/nav-icons/settings.svg" alt=""><span>SETTING</span></a>
-            <hr>
-        </div> -->
-      </div>
-      <div id="project" onclick="closeArchive()">
-        <div id="div1">
-            <p>Projects</p>
-            <button  onclick="openpopup()">CREATE NEW PROJECT</button>
-        </div>
-        <div id="div2">
-          <div>FILTER</div>
-          <select name="client" id="Active"onChange="All()">
-            <option value="">Active</option>
-            <option value="All" >All</option>
-          </select>
-            <select name="client" id="client">
-                <option value="">Client</option>
-            </select>
-            <select name="client" id="client">
-                <option value="">Access</option>
-              </select>
-              <select name="client" id="client">
-                <option value="">Billing</option>
-              </select>
-          <input type="text" id="projectname" placeholder="project name">
-          <button id="applyFilter" onclick="filter()">Apply Filter</button>
-        </div>
-        <div id="div3">
-            <h4>Projects</h4>
         <table>
             <thead>
               <th><a href=""> NAME</a></th>
@@ -272,16 +153,12 @@
         <p>Archive</p>
         <p>Set Template</p>
     </div>
+     
 </body>
 </html>
+
 <script src="./scripts/project.js"></script>
 <script src="./scripts/navbar.js" type="module"></script>
 <script src="./scripts/sidebar.js" type="module"></script>
 <script src="https://kit.fontawesome.com/54a5973b68.js" crossorigin="anonymous"></script>
-
-
-
-
-
-
 

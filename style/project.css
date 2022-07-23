@@ -49,6 +49,9 @@
        display: flex;
      justify-content:space-evenly
     }
+    #h{
+        font-size: 15px;
+    }
     .right p{
         font-size: large;
     }
