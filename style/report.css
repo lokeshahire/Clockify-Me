@@ -1,3 +1,9 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 #body{
             
     display: flex;
@@ -6,11 +12,11 @@
 
 
 #report{
-    top: 16%;
+    top: 10%;
     position: absolute;
-    left: 20%;
+    left: 14%;
     background-color: #f2f6f8;
-    width: 79%;
+    width: 86%;
     /* border: 1px solid black; */
 }
 #box1{
@@ -63,22 +69,25 @@
   width: 150px;
   margin: 8px;
 }
-button{
+ button{
     cursor: pointer;
     background-color: #ffffff;
   border: 1px solid rgb(191, 191, 191) ;
   height: 35px;
     
-
-}
+ }  
 #calender>a>img{
     text-decoration: none;
     color: rgb(136, 134, 134);
     height: 30px;
 }
-button:hover{
-    background-color: #E4EAEE;
+a{
+    text-decoration: none;
+    color: black;
 }
+ button:hover{
+    background-color: #E4EAEE;
+} 
 #box3{
     width: 94%;
     padding: 10px;
