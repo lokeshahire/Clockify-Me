@@ -6,7 +6,7 @@ let navbar =()=>{
     </div>
     <div class="right">
         <div class="name"> 
-            <p id="h">anura.guptag@gmail.com</p>
+            <p id="h">/p>
              <i class="fa-solid fa-angle-down"></i> 
         </div>
         <div>

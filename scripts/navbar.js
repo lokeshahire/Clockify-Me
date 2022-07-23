@@ -14,6 +14,6 @@ console.log(ar);
 
 ar.forEach((el)=>{
    var div=el.email
-   console.log(div)
+//    console.log(div)
    document.getElementById("h").append(div)
 })
