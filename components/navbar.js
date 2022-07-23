@@ -1,12 +1,12 @@
-let navbar =()=>{
-    return  `
+let navbar = () => {
+    return `
     <div class="left">
         <img class="menu" src="./images/menu.png" alt="">
         <img id="logo" src="./images/download.png" alt="">
     </div>
     <div class="right">
         <div class="name"> 
-            <p id="h">/p>
+            <p id="h"></p>
              <i class="fa-solid fa-angle-down"></i> 
         </div>
         <div>
@@ -33,4 +33,4 @@ let navbar =()=>{
     </div> 
     `
 }
-export {navbar}
+export { navbar }
