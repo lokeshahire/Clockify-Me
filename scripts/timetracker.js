@@ -37,9 +37,6 @@ function start (){
 ////////////////////////////////////////////////
 // btn.addEventListener("click",stop);
 function stop(){
-    // if(flag==1){
-        // count= count+1;
-        // counter.textContent= count;
         btn.innerHTML="Start";
         flag=0;
 
@@ -109,46 +106,10 @@ div.classList.add("details")
   
   document.getElementById("timetracker_body").append(div);
 
-})
-
-
-       
-
-
-// btn.addEventListener("click",function(){
-//     btn.innerHTML="Stop";
-//     flag=0;
-// })
-  
-// }
-//  display() 
+}) 
 
 }
 
 
-// let arr=[];
-// function display(){
-//     var a= document.getElementById("desc").value;
-//     var b = document.getElementById("counttime").value;
 
-//     let obj={
-//         name :a,
-//         count:b,
-//     }
-//     arr.push(obj)
-//     localStorage.setItem("userdata",JSON.stringify(arr))
-// }
-
-// delete button
-// let deleteBtn=document.querySelector(".delete");
-// deleteBtn.addEventListener("click",function(){
-//     deleteBtn.remove()
-// })
-
-
-// logout function
-// function logout(){
-//     localStorage.removeItem("email");
-//     window.location.href="login.html"
-// }
 
