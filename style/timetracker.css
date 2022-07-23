@@ -42,9 +42,13 @@ nav{
     margin-top: 40px;
 }
 .right .name{
-   width:160px;
+   width:200px;
    display: flex;
  justify-content:space-evenly
+}
+.right .name p{
+    font-size: 14px;
+
 }
 .right p{
     font-size: large;
