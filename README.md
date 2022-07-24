@@ -70,23 +70,27 @@ The tech Stack we used for creating this website are :
 
 # TRACKER PAGE:
 
-![CART](https://github.com/lokeshahire/ImageGit/blob/main/TRACKER.PNG?raw=true)
+![TRACKER](https://github.com/lokeshahire/ImageGit/blob/main/TRACKER.PNG?raw=true)
 <br>
 <br>
 <br>
 
 # REPORT PAGE :
 
-![PAYMENT](https://github.com/lokeshahire/ImageGit/blob/main/report.PNG?raw=true)
+![REPORT](https://github.com/lokeshahire/ImageGit/blob/main/report.PNG?raw=true)
 <br>
 <br>
 <br>
 
 # PROJECT PAGE :
 
-![PAYMENT](https://github.com/lokeshahire/ImageGit/blob/main/project.PNG?raw=true)
+![PROJECT](https://github.com/lokeshahire/ImageGit/blob/main/project.PNG?raw=true)
 <br>
 <br>
 <br>
+
+# Live Demo :
+
+![LIVE](https://clockify-me-clone.netlify.app/)
 
 Thank You :)
