@@ -91,6 +91,6 @@ The tech Stack we used for creating this website are :
 
 # Live Demo :
 
-![LIVE](https://clockify-me-clone.netlify.app/)
+<p><a href="https://clockify-me-clone.netlify.app/">Live Project</a></p>
 
 Thank You :)
