@@ -8,9 +8,9 @@ We are a team of 5 members making Project on "https://clockify.me/" under Constr
 
 1. HomePage (Landing page)
 
-2. Login Page
+2. Signup Page
 
-3. Signup Page
+3. Login Page
 
 4. Download Page
 
@@ -47,16 +47,16 @@ The tech Stack we used for creating this website are :
 <br>
 <br>
 
-# LOGIN PAGE:
-
-![LOGIN](https://github.com/lokeshahire/ImageGit/blob/main/login.PNG?raw=true)
-<br>
-<br>
-<br>
-
 # SIGNUP PAGE :
 
 ![SIGNUP](https://github.com/lokeshahire/ImageGit/blob/main/signup.PNG?raw=true)
+<br>
+<br>
+<br>
+
+# LOGIN PAGE:
+
+![LOGIN](https://github.com/lokeshahire/ImageGit/blob/main/login.PNG?raw=true)
 <br>
 <br>
 <br>
