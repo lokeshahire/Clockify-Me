@@ -4,7 +4,7 @@ We are a team of 5 members making Project on "https://clockify.me/" under Constr
 
                                              " About Project "
 
-# We are building mostly 7 pages :-
+# We build mainly 7 pages :-
 
 1. HomePage (Landing page)
 
