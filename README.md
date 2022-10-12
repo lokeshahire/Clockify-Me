@@ -34,7 +34,7 @@ The tech Stack we used for creating this website are :
 
  <p >Lokesh Ahire : <a href="https://github.com/lokeshahire">https://github.com/lokeshahire</a></p>
  <p >Anurag Gupta : <a href="https://github.com/abajaj655">https://github.com/anuragg0107</a></p>
-  <p >Ajit Dhar: <a href="https://github.com/aloks31">https://github.com/Arijit-D</a></p>
+  <p >Arijit Dhar: <a href="https://github.com/aloks31">https://github.com/Arijit-D</a></p>
  <p >Sarthak Singh : <a href="https://github.com/PoojaRathod5">https://github.com/Sarthak0008</a></p>
  <p >Rehan khan : <a href="https://github.com/AkashDasmondal94">https://github.com/hrehankhan</a></p>
      
